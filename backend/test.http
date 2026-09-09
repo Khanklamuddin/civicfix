@@ -1,0 +1,20 @@
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+  "name": "Test User 3",
+  "email": "test3@example.com",
+  "password": "4321"
+}
+
+### Login User
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "test3@example.com",
+  "password": "4321"
+}
+### Get Profile
+GET http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOWMzNjNmMTI1ZGQ4NDM3NDVmZjM0ZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzg4NjI1MzY1LCJleHAiOjE3ODg3MTE3NjV9.WP-uabPmNKEg2hQmQ2Plnh9Qh0sbQ5pHxeQhB9rAmZI

@@ -1,0 +1,244 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+  min-height: calc(100vh - 80px);
+  background: #f8fafc;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  padding: 90px 30px;
+  text-align: center;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero-label {
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 58px;
+  line-height: 1.1;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.hero-highlight {
+  color: #2563eb;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #64748b;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondary-button {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+}
+
+.secondary-button:hover {
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+  padding: 75px 30px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: #64748b;
+  font-size: 17px;
+  margin-bottom: 45px;
+}
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.feature-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.home-cta {
+  margin: 0 30px 60px;
+  padding: 55px 25px;
+  text-align: center;
+  background: #2563eb;
+  border-radius: 20px;
+  color: white;
+}
+
+.home-cta h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.home-cta p {
+  font-size: 17px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  background: white;
+  color: #2563eb;
+  padding: 13px 25px;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 65px 20px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .how-it-works {
+    padding: 60px 20px;
+  }
+
+  .home-cta {
+    margin: 0 20px 40px;
+  }
+
+  .home-cta h2 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
